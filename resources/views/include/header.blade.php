@@ -12,11 +12,18 @@
                     </svg>
                 </button>
             </div>
-            <div class="ml-auto">
+            <div class="ml-auto ">
                 <ul class="hidden absolute top-1/2 right-0 mr-5 transform -translate-y-1/2 lg:flex lg:items-center lg:space-x-16 lg:w-auto lg:mr-0 md:mr-0">
-                    <li><a class="text-base text-orange-400 hover:text-orange-300" href="#">Home</a></li>
-                    <li><a class="text-base text-white hover:text-orange-300" href="#">About Us</a></li>
-                    <li><a class="text-base text-white hover:text-orange-300" href="#">Services</a></li>
+                    <li><a class="text-base text-orange-400 hover:text-orange-300" href="/">Home</a></li>
+                    <li><a class="text-base text-white hover:text-orange-300" href="#">About</a></li>
+
+                    <li class="dropdown"><a class="text-base text-white hover:text-orange-300 dropdown" href="#">Services</a>
+                        <div class="dropdown-content">
+                            <a href="{{route('/sales-presentation')}}">Sales Presentation</a>
+                            <a href="{{route('/design-presentation')}}">Design Presentation </a>
+                            <a href="{{route('/business-presentation')}}">Business Presentation</a>
+                            </div>
+                    </li>
                     <li><a class="text-base text-white hover:text-orange-300" href="#">Examples</a></li>
                     <li><a class="text-base text-white hover:text-orange-300" href="#">FAQ</a></li>
                     <li><a class="text-base text-white hover:text-orange-300" href="#">Contact</a></li>
@@ -40,7 +47,7 @@
                 <div>
                     <ul>
                         <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-orange-400 hover:text-orange-300" href="#">Home</a>
+                            <a class="block p-4 text-sm font-semibold text-orange-400 hover:text-orange-300" href="/">Home</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:text-orange-300" href="#">About Us</a>
@@ -63,8 +70,8 @@
         <div class="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128 md:py-16 md:flex-row md:items-center md:space-x-6">
             <div class="flex flex-col items-center w-full md:flex-row md:w-1/2">
                 <div class="max-w-lg md:mx-12 md:order-2">
-                    <h1 class="text-8xl font-bold tracking-wide bg-gradient-to-r from-pink-600 via-red-500 to-orange-600 inline-block text-transparent bg-clip-text md:text-8xl">Welcome!</h1>
-                    <p class="text-3xl pt-2 text-white">You Are Invited to the Best <span class="text-orange-600">Powerpoint</span> <br>Presentation Services <span class="text-orange-600">Dubai</span></p>
+                    <h1 class="lg:text-8xl font-bold tracking-wide bg-gradient-to-r from-pink-600 via-red-500 to-orange-600 inline-block text-transparent bg-clip-text md:text-8xl">Welcome!</h1>
+                    <p class="text-2xl font-semibold pt-2 text-white">You Are Invited to the Best <span class="text-orange-600">Powerpoint</span> <br>Presentation Services <span class="text-orange-600">Dubai</span></p>
                     <p class="text-lg pt-6 pb-7 font-medium text-white">Avail the phenomenal presentation design services for <br>eye-catching PowerPoint designs to capture the attention of your audience.</p>
                     <div class="mt-6">
                         <button class="bg-gradient-to-r from-pink-600 via-red-500 to-orange-600 text-white rounded-full size-12 w-52 text-lg"> Request A Quote</button>
@@ -72,7 +79,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-96 md:w-1/2">
-                <img class=" sm:h-10 lg:h-full object-cover max-w-2xl rounded-md" src="{{ asset('imgs/Laptop.png') }}" alt="apple watch photo">
+                <img class=" sm:h-10  object-cover lgmax-w-2xl rounded-md" src="{{ asset('imgs/Laptop.png') }}" alt="apple watch photo" style="height: 55%">
             </div>
             <div class="flex justify-center order-2 mt-6 md:mt-0 md:space-y-3 md:flex-col">
                 <button class="w-3 h-3 mx-2 bg-orange-500 rounded-full md:mx-0 focus:outline-none"></button>

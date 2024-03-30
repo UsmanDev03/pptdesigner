@@ -17,10 +17,44 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-<style>
+  <style>
+@media only screen and (max-width: 600px) {
+  .spacing {
+   margin-top: 40px;    
+  }
+}
 
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
-</style>
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 189px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+    </style>
 </head>
 
 <body class="overflow-x-hidden">
@@ -131,7 +165,7 @@ function myFunction2() {
 $(document).ready(function () {
     var silder = $(".owl-carousel");
     silder.owlCarousel({
-        autoplay: true,
+        autoplay: false,
         speed:1000,
         autoplayTimeout:2000,
         items: 1,

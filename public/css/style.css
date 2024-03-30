@@ -8,3 +8,9 @@ background-color: #e54a63 !important;
     border: 1px solid white;
     border-radius: 10px;
 }
+.blocks {
+    padding: 20px;
+    background: white;
+    border: 2px solid #e54a63;
+    border-radius: 20px;
+}
